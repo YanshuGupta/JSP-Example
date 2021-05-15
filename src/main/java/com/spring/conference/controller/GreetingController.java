@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class GreetingController {
 	
-	@GetMapping("greeting")
+	@GetMapping("/greeting")
 	public String greet(Map<String, Object> model) {
-		model.put("message", "HELLO BRYAN");
+		model.put("message", "HELLO Yanshu");
 		return "greeting";
 	}
 }
